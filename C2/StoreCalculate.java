@@ -7,9 +7,16 @@ public class StoreCalculate {
         str = str.trim();
         str = str.replaceAll(" +", " ");
         String[] arr=(str.split(" "));
-        double shirt_price=Double.parseDouble(arr[0]);
-        double vat=Double.parseDouble(arr[1]);
-        double total=shirt_price+vat;
-        System.out.println("Total price "+total);
+
+        double product1Count=Double.parseDouble(arr[0]);
+        double product1Price=Double.parseDouble(arr[1]);
+        double product2Count=Double.parseDouble(arr[2]);
+        double product2Price=Double.parseDouble(arr[3]);
+        double product3Count=Double.parseDouble(arr[4]);
+        double product3Price=Double.parseDouble(arr[5]);
+        double totalCount=product1Count+product2Count+product3Count;
+        double totalPrice=product1Price+product2Price+product3Price;
+
+        System.out.println("Total product price is: "+totalPrice+" and total product number is: "+ (int)totalCount);
     }
 }

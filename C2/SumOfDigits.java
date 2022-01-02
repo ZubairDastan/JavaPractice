@@ -13,25 +13,24 @@ public class SumOfDigits {
             sum = sum + num%10;
         }
 
-        System.out.println("The summation of digits of the given number is "+sum);
+        System.out.println("The sum of digits of the given number is "+sum);
     }
 }
 
-/*
-public class SumOfDigits {
-    public static void main(String[] args) {
-        String num;
-        int i,sum=0;
-        Scanner input = new Scanner(System.in);
+// See the bellow code too
 
-        System.out.println("Enter any number: ");
-        num = input.nextLine();
-
-        for (i=0; i<=num.length(); i++) {
-            sum = sum + Character.getNumericValue(num.charAt(i));
-            System.out.println(sum);
-        }
-        System.out.println(sum);
-    }
-}
-*/
+//public class SumOfDigits {
+//    public static void main(String[] args) {
+//        String num;
+//        int i,sum=0;
+//        Scanner input = new Scanner(System.in);
+//
+//        System.out.println("Enter any number: ");
+//        num = input.nextLine();
+//
+//        for (i=0; i<num.length(); i++) {
+//            sum = sum + Character.getNumericValue(num.charAt(i));
+//        }
+//        System.out.println("The sum of digits of the given number is "+sum);
+//    }
+//}

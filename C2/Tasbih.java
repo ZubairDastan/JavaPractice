@@ -8,13 +8,17 @@ public class Tasbih {
         Scanner input = new Scanner(System.in);
 
         System.out.println(" Please press 'Enter' to continue the count. Press 0 to quit.");
-        String d = input.nextLine();
+        String d = "";
 
         while (d.isEmpty()){
             d = input.nextLine();
-            count++;
-            System.out.println("Total count "+count);
+            if (!d.equals("")) {
+                System.out.println("Total count "+count);
+            }
+            else {
+                count++;
+                System.out.println("Total count "+count);
+            }
         }
-
     }
 }
