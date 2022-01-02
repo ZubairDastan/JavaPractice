@@ -1,5 +1,5 @@
 # JavaPractice
-This repo is for some basic java programming problem's solution for personal practice.
+This repo contains some basic java programming problem's solutions for personal practice.
 
 ## How to run
 1. Clone the repo in your directory
