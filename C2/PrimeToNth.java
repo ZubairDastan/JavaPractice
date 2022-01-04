@@ -2,6 +2,7 @@ package C2;
 
 import java.util.Scanner;
 
+// A program to find prime numbers to a given range
 public class PrimeToNth {
     public static void main(String[] args) {
         int num, count;

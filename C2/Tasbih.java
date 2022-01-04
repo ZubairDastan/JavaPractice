@@ -2,6 +2,7 @@ package C2;
 
 import java.util.Scanner;
 
+// A simple Tasbih counter program
 public class Tasbih {
     public static void main(String[] args) {
         int count=0;

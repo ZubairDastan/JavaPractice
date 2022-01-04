@@ -2,6 +2,8 @@ package C2;
 
 import java.util.Scanner;
 
+// A program to calculate the sum of digits
+// of a given number
 public class SumOfDigits {
     public static void main(String[] args) {
         int num,sum;

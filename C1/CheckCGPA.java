@@ -2,6 +2,7 @@ package C1;
 
 import java.util.Scanner;
 
+// A program to calculate CGPA
 public class CheckCGPA {
     public static void main(String[] args) {
         float cse101,eee102,mth101,ged102, cgpa;

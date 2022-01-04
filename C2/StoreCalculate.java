@@ -1,5 +1,7 @@
 package C2;
 
+// A program to calculate total product quantity
+// and price using REGEXP
 public class StoreCalculate {
     public static void main(String[] args) {
         String str="1 piece sharee 3500 tk, 2 piece shirt 2000 tk and 1 piece pant 750 tk";

@@ -3,6 +3,8 @@ package C1;
 import java.util.Random;
 import java.util.Scanner;
 
+// A program to generate some random number and
+// create a simple quiz using those number
 public class RandomQuiz {
     public static void main(String[] args) {
         int b,c,d,e;

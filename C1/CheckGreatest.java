@@ -2,6 +2,7 @@ package C1;
 
 import java.util.Scanner;
 
+// A program to the greatest number from input
 public class CheckGreatest {
     public static void main(String[] args) {
         int a, b, c;

@@ -3,6 +3,7 @@ package C2;
 import java.util.Random;
 import java.util.Scanner;
 
+// A program of a simple math related quiz
 public class MathQuiz {
     public static void main(String[] args) {
         int b,c,d,e,score=0;

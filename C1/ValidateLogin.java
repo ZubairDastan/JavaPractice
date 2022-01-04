@@ -2,6 +2,7 @@ package C1;
 
 import java.util.Scanner;
 
+// A program to check valid login credentials
 public class ValidateLogin {
     public static void main(String[] args) {
         String c_userName = "Zubair";

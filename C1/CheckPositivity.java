@@ -2,6 +2,7 @@ package C1;
 
 import java.util.Scanner;
 
+// A program to check whether the number is positive or not
 public class CheckPositivity {
     public static void main(String[] args) {
         int a;

@@ -2,6 +2,8 @@ package C1;
 
 import java.util.Scanner;
 
+// A program to show current balance and withdraw balance from
+// ATM using condition and switch
 public class ATM {
     public static void main(String[] args) {
         int a,b,currentBalance,withdraw;

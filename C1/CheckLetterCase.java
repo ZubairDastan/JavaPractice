@@ -2,6 +2,7 @@ package C1;
 
 import java.util.Scanner;
 
+// A program to find the letter case
 public class CheckLetterCase {
     public static void main(String[] args) {
         char letter;
