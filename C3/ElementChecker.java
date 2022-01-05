@@ -6,20 +6,22 @@ import java.util.Scanner;
 public class ElementChecker {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int n,i;
+        int n, i;
 
         System.out.println("Enter the length of the array");
-        n=input.nextInt();
+        n = input.nextInt();
         String[] arr = new String[n];
         input.nextLine();
 
-        for (i=0; i<n; i++) {
+        System.out.println("Enter "+n+" array elements");
+        for (i = 0; i < n; i++) {
             arr[i] = input.nextLine();
         }
 
         System.out.println("Your given array elements are:");
-        for (i=0; i<n; i++) {
-            System.out.print(arr[i]+" ");;
+        for (i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+            ;
         }
 
         FindDuplicate duplicate = new FindDuplicate();
@@ -33,8 +35,9 @@ class FindDuplicate {
         int j;
         for (int i = 0; i < arr.length; i++) {
             for (j = i + 1; j < arr.length; j++) {
-                if (arr[i].equals(arr[j]))
+                if (arr[i].equals(arr[j])) {
                     System.out.println(arr[j]);
+                }
             }
         }
     }

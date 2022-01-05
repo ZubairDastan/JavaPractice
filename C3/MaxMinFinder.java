@@ -6,20 +6,22 @@ import java.util.Scanner;
 public class MaxMinFinder {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int n,i;
+        int n, i;
 
-        System.out.println("Enter the length of the array");
-        n=input.nextInt();
+        System.out.println("Enter the length of the array:");
+        n = input.nextInt();
         int[] arr = new int[n];
         //input.nextInt();
 
-        for (i=0; i<n; i++) {
+        System.out.println("Enter "+n+" elements of the array:");
+        for (i = 0; i < n; i++) {
             arr[i] = input.nextInt();
         }
 
         System.out.println("Your given array elements are:");
-        for (i=0; i<n; i++) {
-            System.out.print(arr[i]+" ");;
+        for (i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+            ;
         }
 
         FindMax findMax = new FindMax();
@@ -33,7 +35,7 @@ public class MaxMinFinder {
     }
 }
 
-class FindMin{
+class FindMin {
     public void min(int[] arr) {
         int minValue = arr[0];
         for (int j : arr) {
@@ -45,7 +47,7 @@ class FindMin{
     }
 }
 
-class FindMax{
+class FindMax {
     public void max(int[] arr) {
         int maxValue = arr[0];
         for (int j : arr) {

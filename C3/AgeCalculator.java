@@ -2,6 +2,9 @@ package C3;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -14,17 +17,25 @@ public class AgeCalculator {
         String b_date = input.nextLine();
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-        Date bDateFormat = dateFormat.parse(b_date);
-        Date tDateFormat = new Date();
-        System.out.println(tDateFormat);
+        Date d = dateFormat.parse(b_date);
 
-        long date = tDateFormat.getTime()-bDateFormat.getTime();
-        long year = date/(1000L *60*60*24*365);
-        long month = date/(1000*60*60*24)%12;
-        long day = date/((1000*60*60*24)%365);
-
-        System.out.println("Your current age is "+year+" years, "+month+" months and "+day+" day");
+        Calculator calculator = new Calculator();
+        calculator.calculateAge(b_date,d);
     }
+}
 
 
+class Calculator{
+    public void calculateAge(String b_date, Date d){
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(d);
+        int year = calendar.get(Calendar.YEAR);
+        int month = calendar.get(Calendar.MONTH) + 1;
+        int date = calendar.get(Calendar.DATE);
+        LocalDate localDate = LocalDate.of(year, month, date);
+        LocalDate currentDate = LocalDate.now();
+        Period calculator = Period.between(localDate, currentDate);
+
+        System.out.println("Your current age is "+calculator.getYears()+" years, "+calculator.getMonths()+" months and "+calculator.getDays()+" day");
+    }
 }
