@@ -13,7 +13,7 @@ public class ElementChecker {
         String[] arr = new String[n];
         input.nextLine();
 
-        System.out.println("Enter "+n+" array elements");
+        System.out.println("Enter " + n + " array elements");
         for (i = 0; i < n; i++) {
             arr[i] = input.nextLine();
         }

@@ -13,7 +13,7 @@ public class MaxMinFinder {
         int[] arr = new int[n];
         //input.nextInt();
 
-        System.out.println("Enter "+n+" elements of the array:");
+        System.out.println("Enter " + n + " elements of the array:");
         for (i = 0; i < n; i++) {
             arr[i] = input.nextInt();
         }
