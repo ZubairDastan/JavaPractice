@@ -18,14 +18,11 @@ public class ValidateLogin {
 
         if (c_userName.equals(i_userName) && c_pass.equals(i_pass)) {
             System.out.println("Successfully logged in");
-        }
-        else if (!c_userName.equals(i_userName) && c_pass.equals(i_pass)) {
+        } else if (!c_userName.equals(i_userName) && c_pass.equals(i_pass)) {
             System.out.println("Please enter correct username");
-        }
-        else if (c_userName.equals(i_userName) && !c_pass.equals(i_pass)) {
+        } else if (c_userName.equals(i_userName) && !c_pass.equals(i_pass)) {
             System.out.println("Please enter correct password");
-        }
-        else {
+        } else {
             System.out.println("Login credentials are invalid. Try again");
         }
     }

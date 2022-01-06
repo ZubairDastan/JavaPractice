@@ -11,10 +11,9 @@ public class CheckPositivity {
         System.out.println("Please, enter a number: ");
         a = input.nextInt();
 
-        if (a >= 0){
+        if (a >= 0) {
             System.out.println("This is a positive number.");
-        }
-        else {
+        } else {
             System.out.println("This is a negative number.");
         }
     }

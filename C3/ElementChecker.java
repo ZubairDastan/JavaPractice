@@ -11,7 +11,7 @@ public class ElementChecker {
         System.out.println("Enter the length of the array");
         n = input.nextInt();
         String[] arr = new String[n];
-        input.nextLine();
+        input.nextLine(); // for clearing buffer
 
         System.out.println("Enter " + n + " array elements");
         for (i = 0; i < n; i++) {

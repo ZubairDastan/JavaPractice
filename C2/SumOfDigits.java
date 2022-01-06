@@ -6,16 +6,16 @@ import java.util.Scanner;
 // of a given number
 public class SumOfDigits {
     public static void main(String[] args) {
-        int num,sum;
+        int num, sum;
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter any number: ");
         num = input.nextInt();
-        for (sum=0; num!=0; num=num/10) {
-            sum = sum + num%10;
+        for (sum = 0; num != 0; num = num / 10) {
+            sum = sum + num % 10;
         }
 
-        System.out.println("The sum of digits of the given number is "+sum);
+        System.out.println("The sum of digits of the given number is " + sum);
     }
 }
 

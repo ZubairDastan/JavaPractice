@@ -7,7 +7,7 @@ import java.util.Scanner;
 // create a simple quiz using those number
 public class RandomQuiz {
     public static void main(String[] args) {
-        int b,c,d,e;
+        int b, c, d, e;
         Scanner input = new Scanner(System.in);
 
         Random a = new Random();
@@ -17,12 +17,11 @@ public class RandomQuiz {
         d = b + c;
 
         System.out.println("Take the quiz \n\n");
-        System.out.println("Enter the correct summation of given number "+b+", "+c);
+        System.out.println("Enter the correct summation of given number " + b + ", " + c);
         e = input.nextInt();
         if (e == d) {
             System.out.println("You are correct!");
-        }
-        else {
+        } else {
             System.out.println("Sorry! Wrong answer.");
         }
     }

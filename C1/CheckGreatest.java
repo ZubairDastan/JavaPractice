@@ -17,14 +17,12 @@ public class CheckGreatest {
         System.out.println("Please, enter 3rd number: ");
         c = input.nextInt();
 
-        if(a>b && a>c) {
-            System.out.println(a+" is the greatest number.");
-        }
-        else if(b>a && b>c) {
-            System.out.println(b+" is the greatest number.");
-        }
-        else {
-            System.out.println(c+" is the greatest number.");
+        if (a > b && a > c) {
+            System.out.println(a + " is the greatest number.");
+        } else if (b > a && b > c) {
+            System.out.println(b + " is the greatest number.");
+        } else {
+            System.out.println(c + " is the greatest number.");
         }
     }
 }

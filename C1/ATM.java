@@ -6,7 +6,7 @@ import java.util.Scanner;
 // ATM using condition and switch
 public class ATM {
     public static void main(String[] args) {
-        int a,b,currentBalance,withdraw;
+        int a, b, currentBalance, withdraw;
         Scanner input = new Scanner(System.in);
 
         currentBalance = 2000;
@@ -15,22 +15,20 @@ public class ATM {
         a = input.nextInt();
         System.out.println();
 
-        switch (a){
+        switch (a) {
             case 1:
                 System.out.println("Press 1 to check your balance.\nPress 2 to withdraw money.");
                 b = input.nextInt();
-                if (b==1){
-                    System.out.println("Your current balance is "+currentBalance);
-                }
-                else if (b==2){
+                if (b == 1) {
+                    System.out.println("Your current balance is " + currentBalance);
+                } else if (b == 2) {
                     System.out.println("Enter the amount you want to withdraw: ");
                     withdraw = input.nextInt();
                     if (currentBalance < withdraw) {
                         System.out.println("Insufficient balance.");
-                    }
-                    else {
+                    } else {
                         currentBalance = currentBalance - withdraw;
-                        System.out.println(withdraw+" is credited from your account. You current balance is "+currentBalance);
+                        System.out.println(withdraw + " is credited from your account. You current balance is " + currentBalance);
                     }
                 }
                 break;
@@ -38,19 +36,18 @@ public class ATM {
             case 2:
                 System.out.println("Press 1 to check your balance.\nPress 2 to withdraw money.");
                 b = input.nextInt();
-                switch (b){
+                switch (b) {
                     case 1:
-                        System.out.println("Your current balance is "+currentBalance);
+                        System.out.println("Your current balance is " + currentBalance);
                         break;
                     case 2:
                         System.out.println("Enter the amount you want to withdraw: ");
                         withdraw = input.nextInt();
                         if (currentBalance < withdraw) {
                             System.out.println("Insufficient balance.");
-                        }
-                        else {
+                        } else {
                             currentBalance = currentBalance - withdraw;
-                            System.out.println(withdraw+" is credited from your account. You current balance is "+currentBalance);
+                            System.out.println(withdraw + " is credited from your account. You current balance is " + currentBalance);
                         }
                         break;
 

@@ -11,16 +11,16 @@ public class PrimeToNth {
         System.out.println("Enter the range you want to see prime number: ");
         num = input.nextInt();
 
-        System.out.println("Prime number between 2 to "+num+" is:");
-        for (int i=2; i<=num; i++){
+        System.out.println("Prime number between 2 to " + num + " is:");
+        for (int i = 2; i <= num; i++) {
             count = 1;
 
-            for (int j =2; j<=i/2; j++) {
-                if (i%j==0) {
+            for (int j = 2; j <= i / 2; j++) {
+                if (i % j == 0) {
                     count = 0;
                 }
             }
-            if (count==1){
+            if (count == 1) {
                 System.out.println(i);
             }
         }

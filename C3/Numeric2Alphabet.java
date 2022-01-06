@@ -38,7 +38,7 @@ class Generator {
                 break;
             } else {
                 Random random = new Random();
-                int a = random.nextInt(10 - 1) + 1;
+                int a = random.nextInt(10 - 1) + 1; // Range 1 to 10
                 System.out.println(alphabeticNumber.get(a));
             }
         }

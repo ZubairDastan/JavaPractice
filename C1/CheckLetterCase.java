@@ -12,10 +12,9 @@ public class CheckLetterCase {
         letter = input.next().charAt(0);
 
         if (Character.isUpperCase(letter)) {
-            System.out.println(letter+" is upper case.");
-        }
-        else {
-            System.out.println(letter+" is lower case.");
+            System.out.println(letter + " is upper case.");
+        } else {
+            System.out.println(letter + " is lower case.");
         }
 
     }

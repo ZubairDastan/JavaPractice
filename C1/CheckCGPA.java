@@ -5,9 +5,9 @@ import java.util.Scanner;
 // A program to calculate CGPA
 public class CheckCGPA {
     public static void main(String[] args) {
-        float cse101,eee102,mth101,ged102, cgpa;
+        float cse101, eee102, mth101, ged102, cgpa;
         String grade;
-        Scanner input =new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.println("Enter your GPA in scale of 4.00");
 
@@ -24,38 +24,28 @@ public class CheckCGPA {
         ged102 = input.nextFloat();
 
 
+        cgpa = (cse101 + eee102 + mth101 + ged102) / 4;
+        System.out.println("Your CGPA is: " + cgpa);
 
-        cgpa = (cse101+eee102+mth101+ged102)/4;
-        System.out.println("Your CGPA is: "+cgpa);
-
-        if (cgpa == 4){
+        if (cgpa == 4) {
             System.out.println("Your Grade is A+");
-        }
-        else if (cgpa <4 && cgpa >= 3.75) {
+        } else if (cgpa < 4 && cgpa >= 3.75) {
             System.out.println("Your Grade is A");
-        }
-        else if (cgpa < 3.75 && cgpa >= 3.5) {
+        } else if (cgpa < 3.75 && cgpa >= 3.5) {
             System.out.println("Your Grade is A-");
-        }
-        else if (cgpa < 3.5 && cgpa >= 3.25) {
+        } else if (cgpa < 3.5 && cgpa >= 3.25) {
             System.out.println("Your Grade is B+");
-        }
-        else  if (cgpa <3.25 && cgpa >= 3) {
+        } else if (cgpa < 3.25 && cgpa >= 3) {
             System.out.println("Your Grade is B");
-        }
-        else if (cgpa <3 && cgpa >= 2.75) {
+        } else if (cgpa < 3 && cgpa >= 2.75) {
             System.out.println("Your Grade is B-");
-        }
-        else if (cgpa <2.75 && cgpa >=2.5) {
+        } else if (cgpa < 2.75 && cgpa >= 2.5) {
             System.out.println("Your Grade is C+");
-        }
-        else if (cgpa < 2.5 && cgpa >=2.25) {
+        } else if (cgpa < 2.5 && cgpa >= 2.25) {
             System.out.println("Your Grade is C");
-        }
-        else if (cgpa < 2.25 && cgpa >= 2) {
+        } else if (cgpa < 2.25 && cgpa >= 2) {
             System.out.println("Your Grade is D");
-        }
-        else {
+        } else {
             System.out.println("Your Grade is F. Try harder next time.");
         }
     }
