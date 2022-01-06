@@ -20,13 +20,13 @@ public class AgeCalculator {
         Date d = dateFormat.parse(b_date);
 
         Calculator calculator = new Calculator();
-        calculator.calculateAge(b_date,d);
+        calculator.calculateAge(d);
     }
 }
 
 
-class Calculator{
-    public void calculateAge(String b_date, Date d){
+class Calculator {
+    public void calculateAge(Date d) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(d);
         int year = calendar.get(Calendar.YEAR);
@@ -36,6 +36,6 @@ class Calculator{
         LocalDate currentDate = LocalDate.now();
         Period calculator = Period.between(localDate, currentDate);
 
-        System.out.println("Your current age is "+calculator.getYears()+" years, "+calculator.getMonths()+" months and "+calculator.getDays()+" day");
+        System.out.println("Your current age is " + calculator.getYears() + " years, " + calculator.getMonths() + " months and " + calculator.getDays() + " day");
     }
 }
